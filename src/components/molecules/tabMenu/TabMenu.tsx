@@ -7,11 +7,12 @@ export default function TabMenu({
   value,
   onChange,
   className,
+  tabClassName,
 }: TabMenuProps) {
   return (
     <TabGroup id={id} value={value} onChange={onChange} className={className}>
       {options.map((option, index) => (
-        <Tab key={index} value={option.value}>
+        <Tab key={index} value={option.value} className={tabClassName}>
           {option.label}
         </Tab>
       ))}
@@ -25,6 +26,7 @@ interface TabMenuProps {
   value: any;
   onChange: (value: any) => void;
   className?: string;
+  tabClassName?: string;
 }
 
 interface TabMenuItemProps {
