@@ -1,3 +1,5 @@
+"use client";
+
 import { colorMapperChip, getColorSet } from "@/utils/color";
 import clsx from "clsx";
 import Image from "next/image";
@@ -45,7 +47,7 @@ export default function Avatar({
         <Image
           id={`avatar-${id}`}
           src={src}
-          alt={alt}
+          alt={alt || "Avatar"}
           width={size}
           height={size}
           onError={() => setError(true)}
@@ -87,7 +89,7 @@ export default function Avatar({
 interface AvatarProps {
   id?: string;
   src: string;
-  alt: string;
+  alt?: string;
   fallback: string;
   size?: number;
   isOpenRing?: boolean;

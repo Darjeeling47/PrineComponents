@@ -14,9 +14,9 @@ export default function Banner({
         "border-t md:rounded-lg md:border",
         "md:shadow-md",
         // --- Variant ---
-        (variant == "white" || variant == null || variant == undefined) &&
+        (variant == "light" || variant == null || variant == undefined) &&
           "border-gray-200 bg-white",
-        variant == "black" && "border-gray-700 bg-gray-900 text-white",
+        variant == "dark" && "border-gray-700 bg-gray-900 text-white",
         // --- Custom ---
         className,
       )}
@@ -30,5 +30,5 @@ interface BannerProps {
   id?: string;
   children: React.ReactNode;
   className?: string;
-  variant?: "white" | "black";
+  variant?: "light" | "dark";
 }
