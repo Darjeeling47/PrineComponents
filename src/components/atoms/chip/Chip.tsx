@@ -21,5 +21,5 @@ export default function Chip({ id, children, color }: ChipProps) {
 interface ChipProps {
   id?: string;
   children: React.ReactNode;
-  color: string;
+  color?: string;
 }
