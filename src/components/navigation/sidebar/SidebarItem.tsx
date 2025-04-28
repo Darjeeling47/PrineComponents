@@ -91,7 +91,7 @@ export default function SidebarItem({
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.2, ease: "easeInOut" }}
-            className={clsx("flex flex-col gap-y-1 overflow-hidden pl-4")}
+            className={clsx("flex flex-col gap-y-1 overflow-hidden pl-4 pt-1")}
           >
             {subItems.map((subItem, index) => (
               <SidebarItem key={index} href={subItem.path}>
