@@ -1,3 +1,5 @@
+import { HomeIcon } from "@heroicons/react/24/outline";
+
 export default function defaultAccessibilityGroup() {
   return {
     group: "Default",
@@ -5,7 +7,7 @@ export default function defaultAccessibilityGroup() {
     pages: [
       {
         name: "Example",
-        icon: null,
+        icon: <HomeIcon className="h-5 w-5" />,
         path: "/",
         subPages: [
           {
