@@ -12,7 +12,7 @@ export default function Heading({ name }: { name?: string }) {
   const pageName = getPageName();
 
   return (
-    <div className={clsx("flex w-full flex-col gap-y-2")}>
+    <div className={clsx("flex w-full flex-col gap-y-1")}>
       <div className={clsx("flex w-full flex-row justify-between")}>
         <h1 className={clsx("text-2xl font-semibold", "text-gray-900")}>
           {name ? name : pageName}
