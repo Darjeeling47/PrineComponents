@@ -61,7 +61,7 @@ export default function CommandPalette() {
       )}
     >
       <Combobox onChange={handleSelect} onClose={handleClose}>
-        <ComboboxButton
+        <div
           className={clsx(
             "flex w-full items-center justify-start gap-x-2 p-2",
             "bg-gray-50",
@@ -83,10 +83,10 @@ export default function CommandPalette() {
             )}
             placeholder="Search..."
           />
-        </ComboboxButton>
+        </div>
         <ComboboxOptions
           className={clsx(
-            "flex max-h-96 w-[var(--button-width)] origin-top flex-col gap-y-1 overflow-y-auto",
+            "flex max-h-96 w-full origin-top flex-col gap-y-1 overflow-y-auto",
             "transition-all duration-200 ease-in-out",
             "outline-none",
           )}

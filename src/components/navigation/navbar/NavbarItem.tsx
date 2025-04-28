@@ -54,7 +54,7 @@ interface NavbarItemProps {
   href: string;
   children: React.ReactNode;
   icon?: React.ReactNode;
-  subItems?: SubItem[];
+  subItems?: SubItem[] | undefined;
 }
 
 interface SubItem {

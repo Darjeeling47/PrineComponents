@@ -150,7 +150,7 @@ export default function MultiSelect({
           id={`multiselect-description-${id}`}
           className={clsx(
             "text-sm",
-            "text-gray-500",
+            "text-gray-600",
             "transition-all duration-200",
           )}
         >

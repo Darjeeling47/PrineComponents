@@ -142,7 +142,7 @@ export default function Select({
           id={`select-description-${id}`}
           className={clsx(
             "text-sm",
-            "text-gray-500",
+            "text-gray-600",
             "transition-all duration-200",
           )}
         >
