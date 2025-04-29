@@ -2,7 +2,7 @@ import { Checkbox as HeadlessCheckbox } from "@headlessui/react";
 import { CheckIcon } from "@heroicons/react/24/outline";
 import clsx from "clsx";
 
-export default function CheckBox({
+export default function Checkbox({
   id,
   value,
   onClick,
