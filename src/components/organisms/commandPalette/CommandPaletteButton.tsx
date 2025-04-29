@@ -45,16 +45,18 @@ export default function CommandPaletteButton({
       )}
       onClick={handleClick}
     >
-      <MagnifyingGlassIcon className={clsx("size-5", "text-gray-400")} />
-      <div
-        className={clsx(
-          "w-fit",
-          "text-gray-400",
-          "transition-all duration-200 ease-in-out",
-          "outline-none",
-        )}
-      >
-        Search
+      <div className="flex w-fit items-center gap-x-2">
+        <MagnifyingGlassIcon className={clsx("size-5", "text-gray-400")} />
+        <p
+          className={clsx(
+            "w-fit",
+            "text-gray-400",
+            "transition-all duration-200 ease-in-out",
+            "outline-none",
+          )}
+        >
+          Search
+        </p>
       </div>
       {!checkIsMobile() && (
         <div
