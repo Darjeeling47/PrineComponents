@@ -8,6 +8,7 @@ import Card from "../../atoms/card/Card";
 import clsx from "clsx";
 
 export default function ToggleCard({
+  id,
   title,
   isDefaultOpen = false,
   children,
@@ -21,7 +22,7 @@ export default function ToggleCard({
   };
 
   return (
-    <Card className={cardClassName}>
+    <Card className={cardClassName} id={id}>
       {/* Title */}
       <div
         className={clsx(
@@ -65,7 +66,8 @@ export default function ToggleCard({
 }
 
 interface ToggleCardProps {
-  title: string;
+  id?: string;
+  title: React.ReactNode;
   isDefaultOpen?: boolean;
   children: React.ReactNode;
   cardClassName?: string;

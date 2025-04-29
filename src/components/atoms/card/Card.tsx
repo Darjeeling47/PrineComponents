@@ -1,8 +1,9 @@
 import clsx from "clsx";
 
-export default function Card({ children, className }: CardProps) {
+export default function Card({ id, children, className }: CardProps) {
   return (
     <div
+      id={id}
       className={clsx(
         "p-4",
         "bg-white",
@@ -18,6 +19,7 @@ export default function Card({ children, className }: CardProps) {
 }
 
 interface CardProps {
+  id?: string;
   children: React.ReactNode;
   className?: string;
 }
