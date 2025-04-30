@@ -22,7 +22,10 @@ export default function DatePickerCalendar({
   const weekDayNames = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 
   return (
-    <div id={`datePicker-calendar-${id}`} className={clsx("flex flex-col")}>
+    <div
+      id={`datePicker-calendar-${id}`}
+      className={clsx("mt-3 flex flex-col")}
+    >
       <div
         id={`datePicker-calendar-weeklist-${id}`}
         className={clsx("mb-3 flex flex-row")}
