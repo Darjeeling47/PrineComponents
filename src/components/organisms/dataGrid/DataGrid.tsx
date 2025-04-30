@@ -1,3 +1,5 @@
+"use client";
+
 import clsx from "clsx";
 import { ActionColumnProps, ColumnProps } from "./dataGridInterface";
 import DataGridHeader from "./DataGridHeader";
