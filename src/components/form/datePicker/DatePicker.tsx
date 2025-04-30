@@ -143,7 +143,7 @@ export default function DatePicker({
 
 interface DatePickerProps {
   id?: string;
-  value?: Date | null;
+  value: Date | null | undefined;
   onChange: Function;
   label?: React.ReactNode;
   description?: React.ReactNode;
