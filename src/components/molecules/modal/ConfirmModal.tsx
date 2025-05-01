@@ -30,7 +30,7 @@ export default function ConfirmModal({
   };
 
   return (
-    <Modal id={id}>
+    <Modal id={id} className={clsx("flex flex-col justify-center gap-y-6")}>
       {/* Body content */}
       <div
         className={clsx(
