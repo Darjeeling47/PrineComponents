@@ -94,10 +94,10 @@ interface ConfirmModalProps {
   id?: string;
   color?: string;
   icon: React.ReactNode;
-  title: string;
-  message: string;
-  confirmText: string;
-  cancelText?: string;
+  title: React.ReactNode;
+  message: React.ReactNode;
+  confirmText: React.ReactNode;
+  cancelText?: React.ReactNode;
   onConfirm?: Function;
   onCancel?: Function;
 }

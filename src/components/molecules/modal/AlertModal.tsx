@@ -78,8 +78,8 @@ interface AlertModalProps {
   id?: string;
   color?: string;
   icon: React.ReactNode;
-  title: string;
-  message: string;
-  confirmText: string;
+  title: React.ReactNode;
+  message: React.ReactNode;
+  confirmText: React.ReactNode;
   onConfirm?: Function;
 }
