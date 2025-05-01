@@ -10,14 +10,15 @@ export default function Radio({ id, value, disabled }: RadioProps) {
       disabled={disabled}
       className={clsx(
         "flex size-4 items-center justify-center",
-        "rounded-full border",
+        "rounded-full border border-gray-300",
         "transition-all duration-200",
         "outline-none",
         "group",
         // --- Disabled ---
+        "data-[disabled]:cursor-not-allowed data-[disabled]:data-[checked]:border-gray-400",
         disabled
-          ? "cursor-not-allowed border-gray-300 data-[checked]:border-gray-400"
-          : "cursor-pointer border-gray-200 data-[checked]:border-gray-900",
+          ? "cursor-not-allowed data-[checked]:border-gray-400"
+          : "cursor-pointer data-[checked]:border-gray-900",
       )}
     >
       <div
@@ -29,6 +30,7 @@ export default function Radio({ id, value, disabled }: RadioProps) {
           "invisible",
           "group-data-[checked]:visible",
           // --- Disabled ---
+          "group-data-[checked]:group-data-[disabled]:bg-gray-400",
           disabled
             ? "group-data-[checked]:bg-gray-400"
             : "group-data-[checked]:bg-gray-900",

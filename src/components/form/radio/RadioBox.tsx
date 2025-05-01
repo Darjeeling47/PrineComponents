@@ -21,6 +21,7 @@ export default function RadioBox({
         "outline-none",
         "data-[checked]:text-white",
         // --- Disabled ---
+        "data-[disabled]:data-[checked]:bg-gray-400",
         disabled
           ? "cursor-not-allowed data-[checked]:bg-gray-400"
           : "cursor-pointer data-[checked]:bg-gray-900",
