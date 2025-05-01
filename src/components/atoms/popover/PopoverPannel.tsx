@@ -13,7 +13,7 @@ export default function PopoverPanel({
       transition
       anchor={anchor}
       className={clsx(
-        "z-[500] flex min-w-44 max-w-72 flex-col gap-1 p-2 [--anchor-gap:0.25rem]",
+        "z-[500] min-w-44 max-w-72 p-2 [--anchor-gap:0.25rem]",
         "bg-white",
         "rounded-xl border border-gray-200",
         "transition-all duration-200 ease-in-out",

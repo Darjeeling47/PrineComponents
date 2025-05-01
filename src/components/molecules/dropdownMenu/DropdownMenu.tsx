@@ -21,7 +21,7 @@ export default function DropdownMenu({
       </MenuButton>
 
       {/* Pannel */}
-      <MenuItems id={id} anchor={anchor}>
+      <MenuItems id={id} anchor={anchor} className="flex flex-col gap-y-1">
         {options.map((option, index) => {
           if (option.type == "divider") return <Divider />;
           else if (option.type == "custom")
