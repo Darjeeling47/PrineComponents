@@ -7,7 +7,7 @@ import clsx from "clsx";
 import { useRouter } from "next/navigation";
 import { getPageName } from "./headingUtils";
 
-export default function Heading({ name }: { name?: string }) {
+export default function Heading({ title }: HeadingProps) {
   const router = useRouter();
   const pageName = getPageName();
 
@@ -15,7 +15,7 @@ export default function Heading({ name }: { name?: string }) {
     <div className={clsx("flex w-full flex-col gap-y-1")}>
       <div className={clsx("flex w-full flex-row justify-between")}>
         <h1 className={clsx("text-2xl font-semibold", "text-gray-900")}>
-          {name ? name : pageName}
+          {title ? title : pageName}
         </h1>
         <Button variant="secondary" onClick={router.back} wFit>
           <ArrowLeftIcon className="size-5" />
@@ -25,4 +25,8 @@ export default function Heading({ name }: { name?: string }) {
       <Breadcrumb />
     </div>
   );
+}
+
+interface HeadingProps {
+  title?: React.ReactNode;
 }
