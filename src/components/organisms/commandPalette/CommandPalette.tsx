@@ -57,7 +57,7 @@ export default function CommandPalette() {
   return (
     <Modal
       className={clsx(
-        "fixed left-0 right-0 top-32 mx-auto !w-[560px] !gap-y-4",
+        "fixed left-0 right-0 top-32 mx-auto flex !w-[560px] flex-col gap-y-4",
       )}
     >
       <Combobox onChange={handleSelect} onClose={handleClose}>
