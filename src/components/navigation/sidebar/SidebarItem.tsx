@@ -5,7 +5,7 @@ import { ChevronDownIcon, ChevronUpIcon } from "@heroicons/react/24/outline";
 import clsx from "clsx";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { checkIsMobile } from "@/utils/device";
 
@@ -42,7 +42,7 @@ export default function SidebarItem({
       {/* Items button */}
       <div
         className={clsx(
-          "flex w-full flex-row items-center justify-between p-2",
+          "flex w-full flex-row items-center justify-between",
           "rounded-md",
           "transition-all duration-200 ease-in-out",
           // --- Color / Background (Custom) ---
@@ -52,9 +52,9 @@ export default function SidebarItem({
         <Link
           href={href}
           className={clsx(
-            "flex flex-row items-center justify-start gap-x-2",
+            "flex flex-row items-center justify-start gap-x-2 py-2 pl-2",
             // --- Layout / Spacing (Custom) ---
-            hasSubItem ? "w-10/12" : "w-full",
+            hasSubItem ? "w-10/12" : "w-full pr-2",
           )}
           onClick={handleToggleSubItem}
         >
@@ -66,7 +66,7 @@ export default function SidebarItem({
         <div
           onClick={handleToggleSubItemForIcon}
           className={clsx(
-            "flex h-full items-center justify-center",
+            "flex h-full items-center justify-center pr-2",
             "cursor-pointer",
           )}
         >
