@@ -48,7 +48,7 @@ export default function TextField({
         className={clsx(
           "h-10 w-full px-3 py-2",
           "text-gray-900 placeholder:text-gray-400",
-          "rounded-md border border-gray-300",
+          "rounded-md border border-gray-200",
           "shadow-sm transition-all duration-200",
           "outline-none",
           // --- Disabled ---
