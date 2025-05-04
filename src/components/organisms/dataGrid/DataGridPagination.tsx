@@ -14,7 +14,12 @@ export default function DataGridPagination({
   isReady = true,
 }: DataGridPaginationProps) {
   // error handling
-  if (!totalData || !currentPage) {
+  if (
+    totalData == null ||
+    totalData == undefined ||
+    currentPage == null ||
+    currentPage == undefined
+  ) {
     throw new Error("totalData and currentPage is required");
   }
 

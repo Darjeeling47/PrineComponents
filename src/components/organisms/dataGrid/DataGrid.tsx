@@ -48,13 +48,21 @@ export default function DataGrid({
     throw new Error("Title is required when enableTitle is true");
   }
 
-  if (enablePagination && !totalData && !currentPage) {
+  if (
+    enablePagination &&
+    (totalData == null || totalData == undefined) &&
+    (currentPage == null || currentPage == undefined)
+  ) {
     throw new Error(
       "totalData, currentPage is required when enablePagination is true",
     );
   }
 
-  if (enableRowPerPage && !rowPerPage && !onChangeRowPerPage) {
+  if (
+    enableRowPerPage &&
+    (rowPerPage == null || rowPerPage == undefined) &&
+    !onChangeRowPerPage
+  ) {
     throw new Error(
       "rowPerPage, onChangeRowPerPage is required when enableRowPerPage is true",
     );
